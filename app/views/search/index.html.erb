@@ -1,0 +1,10 @@
+<h3>Best Buy Stores within 25 miles</h3>
+  <% @stores.each do |store| %>
+    <div class="stores">
+      <strong><%= store.name %><br></strong>
+      <%= store.city %><br>
+      <%= store.distance %><br>
+      <%= store.phone_number %><br>
+      <%= store.store_type %><br><br>
+    </div>
+  <% end %>
